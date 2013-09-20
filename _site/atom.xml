@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
+
  <title>The Lost Cafe</title>
  <link href="http://cuiaoxiang.github.io/" rel="self"/>
  <link href="http://cuiaoxiang.github.io"/>
@@ -11,7 +11,7 @@
    <email>cuiaoxiang@gmail.com</email>
  </author>
 
- 
+
  <entry>
    <title>Hello world</title>
    <link href="http://cuiaoxiang.github.io/2013/09/20/hello-world"/>
@@ -19,6 +19,6 @@
    <id>http://cuiaoxiang.github.io/2013/09/20/hello-world</id>
    <content type="html">&lt;p&gt;This is the first post. &lt;!-- excerpt  --&gt;&lt;/p&gt;</content>
  </entry>
- 
- 
+
+
 </feed>
