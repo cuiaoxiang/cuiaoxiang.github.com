@@ -1,23 +1,22 @@
 ---
-layout: default
-title: Home
+layout: index
+title: The Lost Cafe
+tagline: Sleepless in Shanghai
 ---
-
-<div id="home">
-
-  <ul class="posts">
-    {% for post in site.posts limit: 5 %}
-      <div class="front">
-        <div align="right" class="date-container">{{ post.date | date:"%e %B %Y" }}</div>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.excerpt }}</p>
-      </div>
-      {% if forloop.last == false %}
-      </br>
-      <hr class="disperse" />
-      </br>
-      {% endif %}
-    {% endfor %}
-  </ul>
-
+{% include JB/setup %}
+{% for post in paginator.posts %}
+<div class="main-container">
+  <div>
+    <h2 class="post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="post-date">Posted on <strong>{{ post.date | date: "%B %e, %Y" }}</strong></div>
+  </div>
+  <div class="tag_box inline">
+    {% assign tags_list = post.tags %}
+    {% include JB/tags_list %}
+  </div>
+  <div class="post_at_index thepost">
+    {{ post.content | strip_html | truncate: 300 }}
+  </div>
+  <div class="readmore-padding"><a href="{{ post.url }}">Read more...</a></div>
 </div>
+{% endfor %}

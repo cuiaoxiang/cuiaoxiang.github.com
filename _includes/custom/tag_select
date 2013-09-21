@@ -1,0 +1,29 @@
+<style type="text/css">
+</style>
+
+<script type="text/javascript">
+  $(function() {
+    var $pill = $('h2');
+    var $posts = $('.post');
+    var $tag = $('ul.tag_box');
+    var h = window.location.hash;
+    if (h != '') {
+      h = h.substring(1);
+      for (var i = 0; i < $pill.length; ++i) {
+        if ($pill.eq(i)[0].id == h) {
+          $pill.hide().eq(i).show();
+          $posts.hide().eq(i).show();
+          $tag.children().eq(i).addClass('select')
+          break;
+        }
+      }
+    }
+    $('ul.tag_box').children().each(function(index) {
+      $(this).click(function() {
+        $pill.hide().eq(index).show();
+        $posts.hide().eq(index).show();
+        $(this).addClass('select').siblings().removeClass('select');
+      });
+    });
+  });
+</script>

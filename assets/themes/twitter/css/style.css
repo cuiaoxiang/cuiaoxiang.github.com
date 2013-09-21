@@ -8,9 +8,9 @@ body {
 .container > footer p {
   text-align: center; /* center align it with the container */
 }
-.container {
-  width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
-}
+/* .container { */
+/*   width: 820px; /\* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. *\/ */
+/* } */
 
 /* The white background content wrapper */
 .content {
@@ -65,12 +65,35 @@ body {
 }
 .tag_box a.active {
 	background:#57A957;
-	border:1px solid #4C964D;
 	color:#FFF;
 }
-
-hr.disperse {
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+.tag_box a:hover {
+  background-color:#bbb;
+	color:#FFF;
+}
+.tag_box .select a {
+  background-color:#bbb;
+}
+.main-container .tag_box {
+  padding-top: 0;
+}
+.main-container, .tag-container, .side-container {
+  margin-bottom: 20px;
+}
+.side-container {
+  padding: 0 10px;
+}
+.post-title {
+  display: inline-block;
+}
+.post-title a {
+  text-decoration: none;
+}
+.post-date {
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+}
+.readmore-padding {
+  padding-top: 5px;
 }

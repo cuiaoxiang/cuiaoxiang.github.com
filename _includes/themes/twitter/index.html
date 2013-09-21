@@ -1,0 +1,41 @@
+<div class="page-header">
+  <h1>{{ page.title }} <small>{{ page.tagline }}</small></h1>
+</div>
+
+<div class="row-fluid page-body">
+  <div class="span12">
+    <div class="span9">
+      <!-- Main content -->
+      {{ content }}
+      <div class="main-container">
+        {% include custom/pagination %}
+      </div>
+    </div>
+
+    <div class="span3">
+      <!-- Recent posts -->
+      <div class="side-container">
+        {% unless site.posts == empty %}
+        <h3>Recent Posts</h3>
+        <ul>
+          {% for post in site.posts limit: 10 %}
+          <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endunless %}
+      </div>
+
+      <!-- Tags -->
+      <div class="side-container">
+        {% unless site.tags == empty %}
+        <h3>Tags</h3>
+        <div class="tag_box inline">
+          {% assign tags_list = site.tags %}
+          {% include JB/tags_list %}
+        </div>
+        {% endunless %}
+      </div>
+
+    </div>
+  </div>
+</div>
