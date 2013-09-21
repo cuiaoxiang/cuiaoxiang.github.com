@@ -17,7 +17,7 @@ I use emacs.
 
 #### Contact me
 
-email: {{ site.author.email }}
+email: cuiaoxiang\[at\]gmail\[dot\]com
 
 github: {{ site.author.github }}
 
