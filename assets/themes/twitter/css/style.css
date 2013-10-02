@@ -97,3 +97,97 @@ body {
 .readmore-padding {
   padding-top: 5px;
 }
+[class*="social-icon-"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  *margin-right: .3em;
+  line-height: 32px;
+  background-image: url("../../../img/social-white-v2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  font-style: normal;
+}
+.social-icon-weibo {
+  background-image: url("../../../img/weibo.png");
+  background-position: -2px -55px;
+}
+.social-icon-weibo + span {
+  color: #fc1c36;
+}
+.social-icon-github {
+  background-position: 0 0px;
+  background-color: #000000;
+  color: #000000;
+}
+.social-icon-github:hover {
+  background-color: #000000;
+  color: #000000;
+}
+.social-icon-github + span {
+  color: #000000;
+}
+.social-icon-google {
+  background-position: 0 -128px;
+  background-color: #d94a38;
+  color: #d94a38;
+}
+.social-icon-google:hover {
+  background-color: #ba3424;
+  color: #ba3424;
+}
+.social-icon-google + span {
+  color: #d94a38;
+}
+.social-icon-facebook {
+  background-position: 0 -96px;
+  background-color: #3d599b;
+  color: #3d599b;
+}
+.social-icon-facebook:hover {
+  background-color: #2f4476;
+  color: #2f4476;
+}
+.social-icon-facebook + span {
+  color: #3d599b;
+}
+.social-icon-email {
+  background-position: 0 -256px;
+  background-color: #5caeff;
+  color: #5caeff;
+}
+.social-icon-email:hover {
+  background-color: #2995ff;
+  color: #2995ff;
+}
+.social-icon-email + span {
+  color: #5caeff;
+}
+.social-icon-rss {
+  background-position: 0 -192px;
+  background-color: #ff6501;
+  color: #ff6501;
+}
+.social-icon-rss:hover {
+  background-color: #cd5100;
+  color: #cd5100;
+}
+.social-icon-rss + span {
+  color: #ff6501;
+}
+.social-unit a {
+  display: inline-block;
+  margin-top: 7px;
+}
+.social-unit a:hover {
+  text-decoration: none;
+}
+.social-unit a i,
+.social-unit a span {
+  vertical-align: middle;
+  font-size: 16px;
+}
