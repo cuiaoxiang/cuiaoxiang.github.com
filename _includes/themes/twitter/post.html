@@ -29,7 +29,7 @@
       {% include JB/comments %}
     </div>
 
-    <div class="span3">
+    <div class="span2">
       <!-- Published -->
       <div class="side-container">
         <h3>Posted on</h3>
@@ -40,10 +40,10 @@
       <div class="side-container">
         {% unless page.tags == empty %}
         <h3>Tags</h3>
-        <ul class="tag_box">
+        <div class="tag_box inline">
           {% assign tags_list = page.tags %}
           {% include JB/tags_list %}
-        </ul>
+        </div>
         {% endunless %}
       </div>
 

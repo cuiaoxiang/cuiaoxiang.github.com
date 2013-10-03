@@ -16,12 +16,6 @@ I like to watch movie, American/Japan TV series, play table tennis and swimming.
 
 I use emacs.
 
-#### Contact me
-
-email: cuiaoxiang\[at\]gmail\[dot\]com
-
-github: {{ site.author.github }}
-
 ### About the website
 This website will be served as
 * notes of my studies and reflections
